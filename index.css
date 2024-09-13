@@ -1,0 +1,160 @@
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+  }
+  
+.navbar-brand {
+    text-align: center;      /* Centra el texto dentro del enlace */
+}
+  
+#inicio {
+    background-image: url('imagenes/imagen-header.png'); /* Ruta a la imagen */
+    background-size: cover;    /* Ajusta la imagen para que cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 85vh;              /* O puedes ajustar la altura según lo necesites */
+    color: white;               /* Cambia el color del texto para que sea legible sobre la imagen */
+  }
+  
+  .text-inicio {
+    text-align: center;
+    padding: 10%;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+  }
+  
+#btn-blog {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e81a;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   #btn-blog::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   #btn-blog:hover {
+    color: #e8e8e8;
+   }
+   
+   #btn-blog:hover::before {
+    width: 100%;
+   }
+
+   h1{
+    font-weight: bolder;
+   }
+
+   h2{
+    text-align: center;
+    font-weight: bold;
+   }
+
+   h3{
+    padding-top: 5%;
+    color: #92a038;
+   }
+
+   section {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+
+   }
+
+.card-destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); /* Ajuste automático de columnas */
+    gap: 20px;                          /* Espacio entre las tarjetas */
+    padding: 20px;                      /* Espacio alrededor del contenedor */
+  }
+  
+  /* Estilo para las cards */
+  .card {
+    border-radius: 15px;                /* Bordes redondeados */
+    overflow: hidden;                   /* Oculta el contenido que excede los bordes redondeados */
+    box-shadow: 0 4px 8px #8294a3c9); /* Sombras ligeras para dar profundidad */
+    background-color: white;            /* Fondo blanco para las cards */
+    text-align: center;                 /* Centrar el texto */
+    width: 100%;                        /* La tarjeta ocupa el 100% del contenedor */
+  }
+  
+  /* Estilo de la imagen dentro de la card */
+  .card img {
+    padding: 5px;
+    width: 100%;                        /* La imagen ocupa el 100% del ancho de la card */
+    height: auto;                       /* Mantiene la proporción de la imagen */
+  }
+  
+  /* Estilo del cuerpo de la card */
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-body h5 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .card-body p {
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+  }
+
+  #btn-reseñas{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .card-explorar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajuste automático de columnas */
+    gap: 20px;                          /* Espacio entre las tarjetas */
+    padding: 20px;                      /* Espacio alrededor del contenedor */
+  }
+
+  .ecosistemas{
+    text-align: center;                 /* Centrar el texto */
+    width: 100%;  
+  }
+
+  .ecosistemas img {
+    padding: 5px;
+    width: 100%;                        /* La imagen ocupa el 100% del ancho de la card */
+    height: auto;                       /* Mantiene la proporción de la imagen */
+  }
+
+  .card-actividades{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); /* Ajuste automático de columnas */
+    gap: 20px;                          /* Espacio entre las tarjetas */
+    padding: 20px;  
+  }
